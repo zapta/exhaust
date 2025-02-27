@@ -26,8 +26,9 @@ def sum_magnitude(f: int, l: float) -> float:
 STAGES = 3
 INITIAL_LENGTHES = [23, 46, 90]
 
-# The freq range [10, 1000] in step of 10
-FREQS = np.arange(10, 1001, 10)
+# The freq range [10, 1000)
+FREQ_STEP = 0.5
+FREQS = np.arange(1, 1000, FREQ_STEP)
 
 # Meter per second.
 SOUND_SPEED = 343
